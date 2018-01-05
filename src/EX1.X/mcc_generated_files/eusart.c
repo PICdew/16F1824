@@ -186,6 +186,7 @@ void EUSART_Receive_ISR(void)
     eusartRxBuffer[eusartRxHead++] = RCREG;
     if(sizeof(eusartRxBuffer) <= eusartRxHead)
     {
+        NOP();
         eusartRxHead = 0;
     }
     eusartRxCount++;

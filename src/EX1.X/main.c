@@ -52,15 +52,24 @@ void main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
+    BAUDCONbits.ABDEN = 1;
+    while(BAUDCONbits.ABDEN){
+        NOP();
+        NOP();
+        NOP();
+    }
+    NOP();
+    NOP();
+    NOP();
 
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_GlobalInterruptEnable();
 
     // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
+    INTERRUPT_PeripheralInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
