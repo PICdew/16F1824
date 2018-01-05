@@ -3,6 +3,9 @@ src/EX1.X/dist
 src/EX1.X/nbproject/Makefile-genesis.properties
 src/EX1.X/nbproject/Makefile-variables.mk
 src/EX1.X/nbproject/Makefile-default.mk
+src/EX1.X/nbproject/Makefile-impl.mk
+src/EX1.X/nbproject/Makefile-local-default.mk
+src/EX1.X/nbproject/Package-default.bash
 src/EX1.X/nbproject/private/private.xml
 src/EX1.X/viewproject
 
