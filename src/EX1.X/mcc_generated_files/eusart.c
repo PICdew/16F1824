@@ -173,7 +173,7 @@ void EUSART_Transmit_ISR(void)
 
 void EUSART_Receive_ISR(void)
 {
-
+    uint8_t i,j,ch0,ch1;
     if(1 == RCSTAbits.OERR)
     {
         // EUSART error - restart
@@ -181,9 +181,22 @@ void EUSART_Receive_ISR(void)
         RCSTAbits.CREN = 0;
         RCSTAbits.CREN = 1;
     }
-
+    
+    /* inverter bit for iqs227 0xaa*/
+    ch0 = RCREG;
+    ch1 = 0;
+    i = 0x80;
+    j = 0x01;
+    while(i){
+        if(ch0 & i){
+            ch1 |= j;
+        }
+        i=i>>1;
+        j=j<<1;
+    }
+    eusartRxBuffer[eusartRxHead++] = ch1;
     // buffer overruns are ignored
-    eusartRxBuffer[eusartRxHead++] = RCREG;
+    //eusartRxBuffer[eusartRxHead++] = RCREG;
     if(sizeof(eusartRxBuffer) <= eusartRxHead)
     {
         NOP();
