@@ -2178,5 +2178,38 @@
          <value>24</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap"/>
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>54b71dad8fcf355172197fbf25a0ffdbc09822726ceacb276a09dc81e390038a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>168a6b26c2c8a4c2e1d99761361409f2172c81a488ae4cc795e8a871f9149d74</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\eusart.h</file>
+         <hash>1db02449cbdf72b72422d937348d06db7a22e61953c64a13309182ddbdd892ff</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>eeb8f0d0a2cba62c83744af9df8d5449e7aca88e231b412bb42b9fdbfc847440</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>045e9a208e6b34275545f925957583ebc849ce2b2dcdb0499f045dce0d58d1a4</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>f802daf0d59b1f865fc8bad32e1507982a551e1f714cb4b0648d03604d6cdeae</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\eusart.c</file>
+         <hash>5afafd15a716a4a9204bc6654d18fcaace28395b8416948e34dba5db2e047576</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>16517e9cbdc1346599cfa04e25257651648ad751e4fc92af822d27b7b3347a8f</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
 </config>
